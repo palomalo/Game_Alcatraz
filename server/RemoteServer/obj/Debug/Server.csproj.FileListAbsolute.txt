@@ -1,0 +1,84 @@
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Server.exe.config
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Server.exe
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Server.pdb
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Akka.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Akka.Remote.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Helios.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Interface.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\System.Collections.Immutable.dll
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Interface.pdb
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Akka.xml
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Akka.Remote.xml
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.xml
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\bin\Debug\System.Collections.Immutable.xml
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\obj\Debug\Server.exe
+C:\Users\wattar\Downloads\testt\akkadotnet-code-samples-master (1)\akkadotnet-code-samples-master\client\RemoteDeployer.DeployTarget\obj\Debug\Server.pdb
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Server.exe.config
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\obj\Debug\Server.exe
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\obj\Debug\Server.pdb
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Server.exe
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Server.pdb
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Akka.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Akka.Remote.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Helios.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Interface.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\System.Collections.Immutable.dll
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Interface.pdb
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Akka.xml
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Akka.Remote.xml
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.xml
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\bin\Debug\System.Collections.Immutable.xml
+C:\Users\wattar\Downloads\akka test\server\RemoteDeployer.DeployTarget\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Server.exe.config
+C:\Users\wattar\Alcatraz\server\RemoteServer\obj\Debug\Server.exe
+C:\Users\wattar\Alcatraz\server\RemoteServer\obj\Debug\Server.pdb
+C:\Users\wattar\Alcatraz\server\RemoteServer\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Server.exe
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Server.pdb
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Akka.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Akka.Remote.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Helios.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Interface.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\System.Collections.Immutable.dll
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Interface.pdb
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Akka.xml
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Akka.Remote.xml
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.xml
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wattar\Alcatraz\server\RemoteServer\bin\Debug\System.Collections.Immutable.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Server.exe.config
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\obj\Debug\Server.exe
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\obj\Debug\Server.pdb
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Server.exe
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Server.pdb
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Akka.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Akka.Remote.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Helios.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Interface.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\System.Collections.Immutable.dll
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Interface.pdb
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Akka.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Akka.Remote.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\bin\Debug\System.Collections.Immutable.xml
+C:\Users\wattar\Documents\GitHub\Game\server\RemoteServer\obj\Debug\Server.csprojResolveAssemblyReference.cache
