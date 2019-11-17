@@ -85,3 +85,6 @@ C:\Users\wattar\Documents\GitHub\Game\client\RemoteClient\bin\Debug\Google.Proto
 C:\Users\wattar\Documents\GitHub\Game\client\RemoteClient\bin\Debug\Newtonsoft.Json.xml
 C:\Users\wattar\Documents\GitHub\Game\client\RemoteClient\bin\Debug\System.Collections.Immutable.xml
 C:\Users\wattar\Documents\GitHub\Game\client\RemoteClient\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\wattar\Documents\GitHub\Game_Alcatraz\client\RemoteClient\bin\Debug\Client.exe.config
+C:\Users\wattar\Documents\GitHub\Game_Alcatraz\client\RemoteClient\obj\Debug\Client.exe
+C:\Users\wattar\Documents\GitHub\Game_Alcatraz\client\RemoteClient\obj\Debug\Client.pdb
