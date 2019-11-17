@@ -111,3 +111,6 @@ C:\Users\wattar\Documents\GitHub\test\client1\RemoteClient\bin\Debug\Newtonsoft.
 C:\Users\wattar\Documents\GitHub\test\client1\RemoteClient\bin\Debug\System.Collections.Immutable.xml
 C:\Users\wattar\Documents\GitHub\test\client1\RemoteClient\obj\Debug\Client.csprojResolveAssemblyReference.cache
 C:\Users\wattar\Documents\GitHub\test\client1\RemoteClient\bin\Debug\AlcatrazLib.dll
+C:\Users\wattar\Documents\GitHub\Game_Alcatraz\test\client1\RemoteClient\bin\Debug\Client.exe.config
+C:\Users\wattar\Documents\GitHub\Game_Alcatraz\test\client1\RemoteClient\obj\Debug\Client.exe
+C:\Users\wattar\Documents\GitHub\Game_Alcatraz\test\client1\RemoteClient\obj\Debug\Client.pdb
