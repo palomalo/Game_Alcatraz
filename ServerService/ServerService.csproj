@@ -15,8 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="cspread">
-      <HintPath>..\..\..\..\OneDrive - Capgemini\Desktop\data\alcatraz\cspread-bin\cspread.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\..\data\alcatraz\cspread-src\cspread\cspread.csproj" />
   </ItemGroup>
 </Project>

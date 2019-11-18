@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\ServerService.csproj": {}
+    "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\ServerService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\ServerService.csproj": {
+    "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\ServerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\ServerService.csproj",
+        "projectUniqueName": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\ServerService.csproj",
         "projectName": "ServerService",
-        "projectPath": "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\ServerService.csproj",
+        "projectPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\ServerService.csproj",
         "packagesPath": "C:\\Users\\ibulica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\obj\\",
+        "outputPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj": {
+                "projectPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -83,6 +87,17 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj",
+        "projectName": "cspread",
+        "projectPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj"
+      },
+      "frameworks": {
+        "net20": {}
       }
     }
   }

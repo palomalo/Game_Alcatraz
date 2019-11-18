@@ -1413,6 +1413,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "cspread/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/cspread.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/cspread.dll": {}
+        }
       }
     }
   },
@@ -4755,6 +4764,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "cspread/1.0.0": {
+      "type": "project",
+      "path": "../../../data/alcatraz/cspread-src/cspread/cspread.csproj",
+      "msbuildProject": "../../../data/alcatraz/cspread-src/cspread/cspread.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4764,7 +4778,8 @@
       "Microsoft.Extensions.Hosting.WindowsServices >= 3.0.0",
       "Serilog.AspNetCore >= 3.2.0",
       "Serilog.Sinks.File >= 4.1.0",
-      "System.Runtime >= 4.3.1"
+      "System.Runtime >= 4.3.1",
+      "cspread >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4774,11 +4789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\ServerService.csproj",
+      "projectUniqueName": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\ServerService.csproj",
       "projectName": "ServerService",
-      "projectPath": "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\ServerService.csproj",
+      "projectPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\ServerService.csproj",
       "packagesPath": "C:\\Users\\ibulica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ibulica\\Source\\Repos\\ServerService\\ServerService\\obj\\",
+      "outputPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\alcatraz_repo\\Game_Alcatraz\\ServerService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4796,7 +4811,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj": {
+              "projectPath": "C:\\Users\\ibulica\\OneDrive - Capgemini\\Desktop\\data\\alcatraz\\cspread-src\\cspread\\cspread.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
