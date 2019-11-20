@@ -57,7 +57,6 @@
     <Compile Include="Client.cs" />
     <Compile Include="EchoActor.cs" />
     <Compile Include="Hello.cs" />
-    <Compile Include="MessagingActor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
