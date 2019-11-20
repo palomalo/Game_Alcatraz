@@ -57,12 +57,11 @@ namespace Alcatraz
             Console.WriteLine("moving " + prisoner + " to " + (rowOrCol == Alcatraz.ROW ? "row" : "col") + " " + (rowOrCol == Alcatraz.ROW ? row : col));
             Console.WriteLine("ID" + player.Id);
 
-           // Move move = new Move(player, prisoner, rowOrCol, row, col, player.Id);
-
+           //Move move = new Move(player, prisoner, rowOrCol, row, col, player.Id);
             //akka send to other players
 
 
-          /*  for (int i = 0; i < getNumPlayer() - 1; i++)
+           /* for (int i = 0; i < getNumPlayer() - 1; i++)
             {
                 other[i].doMove(other[i].getPlayer(player.Id), other[i].getPrisoner(prisoner.Id), rowOrCol, row, col);
                 Console.WriteLine("Player " + other[i].getPlayer(player.Id) + "Prisoner " + prisoner + "row " + row + "col" + col);

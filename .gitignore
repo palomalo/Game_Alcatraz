@@ -489,3 +489,4 @@ MigrationBackup/
 
 # End of https://www.gitignore.io/api/dotnetcore,aspnetcore,visualstudio
 test/client1/.vs/Client/v14/.suo
+/client/InterfaceShared/AlcatrazClass.cs
