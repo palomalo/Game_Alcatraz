@@ -50,6 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlcatrazGame.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientClass.cs" />
+    <Compile Include="Move.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
