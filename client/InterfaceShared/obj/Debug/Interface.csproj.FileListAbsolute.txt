@@ -43,3 +43,16 @@ C:\Users\wattar\Documents\GitHub\Game\client\InterfaceShared\bin\Debug\System.Co
 C:\Users\wattar\Documents\GitHub\Game\client\InterfaceShared\obj\Debug\Interface.csprojResolveAssemblyReference.cache
 C:\Users\wattar\Documents\GitHub\Game\client\InterfaceShared\obj\Debug\Interface.dll
 C:\Users\wattar\Documents\GitHub\Game\client\InterfaceShared\obj\Debug\Interface.pdb
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Hello.cs
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Interface.dll
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Interface.pdb
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Akka.dll
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\System.Collections.Immutable.dll
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Akka.xml
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\bin\Debug\System.Collections.Immutable.xml
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\obj\Debug\Interface.csproj.CopyComplete
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\obj\Debug\Interface.dll
+C:\Users\fgruber\Source\Repos\Game_Alcatraz\client\InterfaceShared\obj\Debug\Interface.pdb
