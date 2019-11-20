@@ -488,5 +488,4 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/dotnetcore,aspnetcore,visualstudio
-/Alcatraz_game_logic/Game_logic - Kopie
-/client/InterfaceShared/AlcatrazClass.cs
+test/client1/.vs/Client/v14/.suo
