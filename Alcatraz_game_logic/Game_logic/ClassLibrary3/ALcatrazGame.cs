@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using Akka.Actor;
 using Alcatraz;
+using GameInterface;
 
 namespace Alcatraz
+
 {
     public class Test
     {
@@ -24,46 +27,23 @@ namespace Alcatraz
 
             ClientClass clientClass = new ClientClass(players);
             List<Client> clientList = new List<Client>();
-
+            string test = "wwww";
             Client clientItem = clientClass.initializeClient(0,players);
-            
 
             List<ClientClass> clientClassList = new List<ClientClass>();
             List<Alcatraz> alcatrazList = new List<Alcatraz>();
-
-           
+ 
            // foreach (Client clientItem in clientList)
             //{
             clientItem.getClientClass();
             clientItem.getAlcatraz();
-         
-            //}
-
-        /*    int counterForEachTest = 0;
-            foreach (ClientClass clientClassItem in clientClassList)
-            {
-                int counterForEachAlcatraz = 0;
-                int iterator = 0;
-                foreach (Alcatraz alcatrazItem in alcatrazList)
-                {
-                    if (counterForEachTest != counterForEachAlcatraz)
-                    {
-                        clientClassItem.setOther(iterator, alcatrazItem);
-                        Console.WriteLine("t" + counterForEachTest + ".setOther( " + iterator + "," + counterForEachAlcatraz);
-                        iterator++;
-                    }
-                    counterForEachAlcatraz++;
-                }
-                counterForEachTest++;
-            }*/
-
-           
-             clientItem.getAlcatraz().showWindow();
-             clientItem.getAlcatraz().addMoveListener(clientItem.getClientClass());
+            clientItem.getAlcatraz();
+     
+            clientItem.getAlcatraz().showWindow();
+            clientItem.getAlcatraz().addMoveListener(clientItem.getClientClass());
             clientItem.getAlcatraz().getWindow().FormClosed += new FormClosedEventHandler(Test_FormClosed);
             clientItem.getAlcatraz().start();
-            
-            
+
             Application.Run();
         }
 

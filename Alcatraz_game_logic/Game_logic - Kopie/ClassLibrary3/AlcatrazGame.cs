@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using Alcatraz;
 
-namespace Alcatraz
+namespace AlcatrazGame
 {
 
     public class Test

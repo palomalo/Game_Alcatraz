@@ -1,4 +1,5 @@
-﻿using ClassLibrary3;
+﻿using Akka.Actor;
+using GameInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,18 +14,35 @@ namespace Alcatraz
 
         private int numPlayer;
         private Alcatraz[] other;
+        public string remoteActorAddressClient1;
+        private string remoteActorAddressClient2;
+        private IActorRef localChatActor;
+        private IActorRef child;
+        private ActorSystem actorSystem;
+        private string actorSystemName;
+        public ActorSelection remoteChatActorClient1;
+        public ActorSelection remoteChatActorClient2;
 
         public ClientClass(int numberOfPlayers)
         {
             other = new Alcatraz[numberOfPlayers];
             numPlayer = numberOfPlayers;
+            this.actorSystemName = "client0";
+            actorSystem = ActorSystem.Create(actorSystemName);
+
+            remoteActorAddressClient1 = "akka.tcp://client1@localhost:2222/user/GameActor";
+            remoteActorAddressClient2 = "akka.tcp://client2@localhost:3333/user/GameActor";
+            this.remoteChatActorClient1 = actorSystem.ActorSelection(remoteActorAddressClient1);
+            this.remoteChatActorClient2 = actorSystem.ActorSelection(remoteActorAddressClient2);
+            this.localChatActor = actorSystem.ActorOf(Props.Create<GameActor>(), "GameActor");
+            this.child = actorSystem.ActorOf(Props.Create<GameActor>(), "GameActorClient1Child");
         }
 
         public Client initializeClient(int playerID, int numberOfPlayer)
         {
+
             ClientClass clientClass = new ClientClass(numberOfPlayer);
             Alcatraz clientAlcatraz = new Alcatraz();
-
             clientClass.setNumPlayer(numPlayer);
             clientAlcatraz.init(numPlayer, playerID);
 
@@ -33,8 +51,8 @@ namespace Alcatraz
                 int help = j - 1;
                 clientAlcatraz.getPlayer(help).Name = "Player " + j;
             }
+  
             return new Client(clientClass, clientAlcatraz, playerID);
-
         }
 
         public void setOther(int i, Alcatraz t)
@@ -56,18 +74,38 @@ namespace Alcatraz
         {
             Console.WriteLine("moving " + prisoner + " to " + (rowOrCol == Alcatraz.ROW ? "row" : "col") + " " + (rowOrCol == Alcatraz.ROW ? row : col));
             Console.WriteLine("ID" + player.Id);
-
-           // Move move = new Move(player, prisoner, rowOrCol, row, col, player.Id);
-
-            //akka send to other players
-
-
-          /*  for (int i = 0; i < getNumPlayer() - 1; i++)
-            {
-                other[i].doMove(other[i].getPlayer(player.Id), other[i].getPrisoner(prisoner.Id), rowOrCol, row, col);
-                Console.WriteLine("Player " + other[i].getPlayer(player.Id) + "Prisoner " + prisoner + "row " + row + "col" + col);
-            }*/
+            
+            
+              /*  if (player.Id != i)
+                {
+                    this.remoteChatActorClient1.Tell(this.convertMove(player, prisoner, rowOrCol, row, col), this.child);
+                    Console.WriteLine("send Move " + this.convertMove(player, prisoner, rowOrCol, row, col) + " to client " + i);
+                }
+                else { */
+                    this.remoteChatActorClient2.Tell(this.convertMove(player, prisoner, rowOrCol, row, col), this.child);
+                    //AKKA send to client i 
+                    //Console.WriteLine("send Move " + this.convertMove(player, prisoner, rowOrCol, row, col) +" to client "+);
+                   
+               // }
+           
         }
+
+        public Move convertMove(Player player, Prisoner prisoner, int rowOrCol, int row, int col)
+        {
+            return new Move(player, prisoner, rowOrCol,row,col);
+        }
+        
+       /* public void receiveMove(Move receivedMove)
+        {
+            Player player = receivedMove.getPLayer();
+            Prisoner prisoner = receivedMove.getPrisoner();
+            int rowOrCol = receivedMove.getRowOrCol();
+            int row = receivedMove.getRow();
+            int col = receivedMove.getCol();
+            // Move returnMove = new Move(player, prisoner, rowOrCol, row, col);
+            this.doMove(player, prisoner, rowOrCol, row,col);  
+        }*/
+
 
         public void undoMove()
         {

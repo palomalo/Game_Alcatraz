@@ -13,6 +13,9 @@ namespace Alcatraz
         private Alcatraz alcatraz;
         private int playerID;
 
+       // private string address;
+       // private int port;
+
         public Client()
         {
             
@@ -22,6 +25,8 @@ namespace Alcatraz
             this.clientClass = clientClass;
             this.alcatraz = alcatraz;
             this.playerID = playerID;
+         //   this.port = port;
+           // this.address = address;
         }
 
         public void setPlayerID(int playerID)
@@ -32,6 +37,15 @@ namespace Alcatraz
         {
             return playerID;
         }        
+
+        //public void setPort(int port)
+        //{
+        //    this.port = port;
+        //}
+        //public int getPort()
+        //{
+        //    return this.port;
+        //}
 
         public ClientClass getClientClass()
         {

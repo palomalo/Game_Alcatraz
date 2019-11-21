@@ -183,12 +183,7 @@ namespace ClientPlayer
             string actorSystemName = "client1";
             Console.Title = actorSystemName;
             Alcatraz.Player player = new Alcatraz.Player(1);
-            //ClientPlayer p1 = new ClientPlayer();
-            //player.init(3, 1);
-            player.getPlayer(1).Name = Console.ReadLine();
-            player.showWindow();
-            //testc
-            //player.addMoveListener(t1);
+
             try
             {
                 using (var actorSystem = ActorSystem.Create(actorSystemName))

@@ -55,3 +55,17 @@ C:\Users\wattar\Documents\GitHub\test\client1\InterfaceShared\bin\Debug\System.C
 C:\Users\wattar\Documents\GitHub\test\client1\InterfaceShared\obj\Debug\Interface.csprojResolveAssemblyReference.cache
 C:\Users\wattar\Documents\GitHub\test\client1\InterfaceShared\obj\Debug\Interface.dll
 C:\Users\wattar\Documents\GitHub\test\client1\InterfaceShared\obj\Debug\Interface.pdb
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Hello.cs
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Interface.dll
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Interface.pdb
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Akka.dll
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\System.Collections.Immutable.dll
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Akka.xml
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\bin\Debug\System.Collections.Immutable.xml
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\obj\Debug\Interface.csproj.CopyComplete
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\obj\Debug\Interface.dll
+C:\Users\bernh\Source\Repos\Alcatraz_Game\basharo\Game_Alcatraz\test\client1\InterfaceShared\obj\Debug\Interface.pdb
