@@ -11,6 +11,7 @@ namespace GameInterface
     public class EchoActor : ReceiveActor
     {
         private readonly ILoggingAdapter log = Context.GetLogger();
+
         public EchoActor()
         {
 
