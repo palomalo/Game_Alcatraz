@@ -26,9 +26,10 @@ namespace Alcatraz
             int players = 2;
 
             ClientClass clientClass = new ClientClass(players);
-            List<Client> clientList = new List<Client>();
-            string test = "wwww";
-            Client clientItem = clientClass.initializeClient(0,players);
+            //List<Client> clientList = new List<Client>();
+
+            Client clientItem = clientClass.initializeClient(1,players);
+
 
             List<ClientClass> clientClassList = new List<ClientClass>();
             List<Alcatraz> alcatrazList = new List<Alcatraz>();
@@ -51,6 +52,7 @@ namespace Alcatraz
         {
             Environment.Exit(0);
         }
- 
+
+        
     }
 }

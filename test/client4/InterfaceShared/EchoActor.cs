@@ -1,7 +1,6 @@
 ﻿using System;
 using Akka.Actor;
 using Akka.Event;
-using Alcatraz;
 using Interface;
 
 namespace GameInterface
@@ -9,13 +8,10 @@ namespace GameInterface
     /// <summary>
     /// Actor that just replies the message that it received earlier
     /// </summary>
-    public class GameActor : ReceiveActor
+    public class EchoActor : ReceiveActor
     {
         private readonly ILoggingAdapter log = Context.GetLogger();
-
-        private ClientClass cClass = new ClientClass(2);
-
-        public GameActor()
+        public EchoActor()
         {
 
             Receive<Hello>(hello =>
@@ -24,7 +20,7 @@ namespace GameInterface
                 Sender.Tell(hello);
             });
 
-            Receive<Msg1>(msg => {
+            Receive<Msg>(msg => {
                 // echo message back to sender
                 Sender.Tell(msg);
             });
@@ -34,24 +30,10 @@ namespace GameInterface
                 Sender.Tell(player.printPlayerCounter());
             });
 
-            Receive<Move>(player => {
-                // echo message back to sender
-                Sender.Tell("ss");
-            });
-            Receive<Client>(client => {
-                // echo message back to sender
-                ClientClass ss = cClass.getClientClass();
-                ss.setOther(0, client.getAlcatraz());
-                
-               // client.getClientClass();
-                Sender.Tell("ss");
-            });
-
         }
     }
 
-
-    public class Msg1
+    public class Msg
     {
         public string Content { get; set; }
     }
