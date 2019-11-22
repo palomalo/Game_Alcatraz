@@ -1,5 +1,6 @@
 ﻿using Akka.Actor;
 using GameInterface;
+using Newtonsoft.Json;
 using System;
 
 namespace Server
@@ -72,8 +73,8 @@ namespace Server
                     using (var actorSystem = ActorSystem.Create(actorSystemName))
                     {
 
-                        var localChatActor = actorSystem.ActorOf(Props.Create<Client>(), "Client");
-                        var child = actorSystem.ActorOf(Props.Create<Client>(), "ClientChild");
+                        var localChatActor = actorSystem.ActorOf(Props.Create<Client>(), "client");
+                        //var child = actorSystem.ActorOf(Props.Create<Client>(), "ClientChild");
 
                         string remoteActorAddress = "akka.tcp://peer1@localhost:6666/user/MessagingActor";
                         var remoteChatActor = actorSystem.ActorSelection(remoteActorAddress);
@@ -84,7 +85,10 @@ namespace Server
                             while (line != null)
                             {
                                 line = Console.ReadLine();
-                                remoteChatActor.Tell(line, child);
+                                //string json = JsonConvert.SerializeObject(line);
+                              
+
+                                remoteChatActor.Tell(line, localChatActor);
                             }
                         }
                         else
