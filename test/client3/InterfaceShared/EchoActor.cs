@@ -3,7 +3,7 @@ using Akka.Actor;
 using Akka.Event;
 using Interface;
 
-namespace GameInterface
+namespace Interface
 {
     /// <summary>
     /// Actor that just replies the message that it received earlier
@@ -25,9 +25,10 @@ namespace GameInterface
                 Sender.Tell(msg);
             });
 
-            Receive<Players>(player => {
+            Receive<Client>(client => {
                 // echo message back to sender
-                Sender.Tell(player.printPlayerCounter());
+                Sender.Tell("ack");
+                Console.WriteLine(client);
             });
 
         }
