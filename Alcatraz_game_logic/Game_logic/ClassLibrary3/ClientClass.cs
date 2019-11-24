@@ -1,5 +1,4 @@
 ﻿using Akka.Actor;
-using GameInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,121 +8,72 @@ using System.Threading.Tasks;
 
 namespace Alcatraz
 {
-    class ClientClass : MoveListener
+    class ClientClass
     {
 
-        private int numPlayer;
-        private Alcatraz[] other;
-        public string remoteActorAddressClient1;
-        private string remoteActorAddressClient2;
         private IActorRef localChatActor;
         private IActorRef child;
         private ActorSystem actorSystem;
+        Alcatraz clientAlcatraz = new Alcatraz();
         private string actorSystemName;
-        public ActorSelection remoteChatActorClient1;
-        public ActorSelection remoteChatActorClient2;
+        private static ActorSelection[] remoteChatActorClient;
+        private int playerNumber;
+        private int iterator;       
 
-        private ClientClass clientClass;
-
-        public ClientClass(int numberOfPlayers)
+        public ClientClass(ClientData[] data, string uniqueName)
         {
-            other = new Alcatraz[numberOfPlayers];
-            numPlayer = numberOfPlayers;
-            this.actorSystemName = "client0";
+            actorSystemName = uniqueName;
             actorSystem = ActorSystem.Create(actorSystemName);
+            remoteChatActorClient = new ActorSelection[data.Length];
 
-            remoteActorAddressClient1 = "akka.tcp://client1@localhost:2222/user/GameActor";
-            remoteActorAddressClient2 = "akka.tcp://client2@localhost:3333/user/GameActor";
-            this.remoteChatActorClient1 = actorSystem.ActorSelection(remoteActorAddressClient1);
-            this.remoteChatActorClient2 = actorSystem.ActorSelection(remoteActorAddressClient2);
+            child = actorSystem.ActorOf(Props.Create<GameActor>(), uniqueName);
+
+            iterator = 0;
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (!uniqueName.Equals(data[i].getUniqueName()))
+                {
+                    actorSystem = ActorSystem.Create(uniqueName);
+                    string remoteActorAddressClient1 = data[i].getAddress()+data[i].getPort()+data[i].getUrlAddition();
+                    remoteChatActorClient[iterator] = actorSystem.ActorSelection(remoteActorAddressClient1);
+                    iterator++;
+                }
+            }        
+
             this.localChatActor = actorSystem.ActorOf(Props.Create<GameActor>(), "GameActor");
-            this.child = actorSystem.ActorOf(Props.Create<GameActor>(), "GameActorClient0Child");
+            
         }
 
         public Client initializeClient(int playerID, int numberOfPlayer)
         {
+            //Game logic
+            clientAlcatraz.init(numberOfPlayer, playerID);
 
-            clientClass.setClientClass(numberOfPlayer);
-
-            Alcatraz clientAlcatraz = new Alcatraz();
-            clientClass.setNumPlayer(numPlayer);
-            clientAlcatraz.init(numPlayer, playerID);
-
-            for (int j = 1; j < numPlayer + 1; j++)
+            for (int j = 1; j < numberOfPlayer + 1; j++)
             {
                 int help = j - 1;
                 clientAlcatraz.getPlayer(help).Name = "Player " + j;
             }
+            Client client = new Client(clientAlcatraz, playerID);
 
-            Client client = new Client(clientClass, clientAlcatraz, playerID);
-
-            this.remoteChatActorClient1.Tell(client, this.child);
-
+            for (int jj = 0; jj < numberOfPlayer; jj++)
+            {
+                Console.WriteLine("Tell Client" +jj);
+                //remoteChatActorClient[jj].Tell(client, child);
+            }
+            playerNumber = numberOfPlayer;
             return client;
         }
-
-
-        public void setClientClass(int numberOfPlayer)
+        
+        public IActorRef getChild()
         {
-            this.clientClass = new ClientClass(numberOfPlayer);
-        }
-        public ClientClass getClientClass()
-        {
-            return this.clientClass;
+            return this.child;
         }
 
-
-        public int getNumPlayer()
+        public static ActorSelection[] getRemoteChatActorClient()
         {
-            return numPlayer;
-        }
-
-        public void setNumPlayer(int numPlayer)
-        {
-            this.numPlayer = numPlayer;
-        }
-
-        public void setOther(int i, Alcatraz t)
-        {
-            this.other[i] = t;
-        }
-
-        public void doMove(Player player, Prisoner prisoner, int rowOrCol, int row, int col)
-        {
-            Console.WriteLine("moving " + prisoner + " to " + (rowOrCol == Alcatraz.ROW ? "row" : "col") + " " + (rowOrCol == Alcatraz.ROW ? row : col));
-            Console.WriteLine("ID" + player.Id);
-
-
-            /*  if (player.Id != i)
-              {
-                  this.remoteChatActorClient1.Tell(this.convertMove(player, prisoner, rowOrCol, row, col), this.child);
-                  Console.WriteLine("send Move " + this.convertMove(player, prisoner, rowOrCol, row, col) + " to client " + i);
-              }
-              else { */
-            this.remoteChatActorClient1.Tell(this.convertMove(player, prisoner, rowOrCol, row, col), this.child);
-            //AKKA send to client i 
-            //Console.WriteLine("send Move " + this.convertMove(player, prisoner, rowOrCol, row, col) +" to client "+);
-
-            // }
-
-        }
-
-        public Move convertMove(Player player, Prisoner prisoner, int rowOrCol, int row, int col)
-        {
-            return new Move(player, prisoner, rowOrCol, row, col);
-        }
-
-        /* public void receiveMove(Move receivedMove)
-         {
-             Player player = receivedMove.getPLayer();
-             Prisoner prisoner = receivedMove.getPrisoner();
-             int rowOrCol = receivedMove.getRowOrCol();
-             int row = receivedMove.getRow();
-             int col = receivedMove.getCol();
-             // Move returnMove = new Move(player, prisoner, rowOrCol, row, col);
-             this.doMove(player, prisoner, rowOrCol, row,col);  
-         }*/
-
+            return remoteChatActorClient;
+        }    
 
         public void undoMove()
         {

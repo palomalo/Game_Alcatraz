@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Alcatraz
 {
-    class Move
+    public class Move
     {
         private Player player;
         private Prisoner prisoner;

@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Alcatraz
 {
-    class Client
+    public class Client
     {
-        private ClientClass clientClass;
         private Alcatraz alcatraz;
         private int playerID;
 
@@ -20,9 +19,9 @@ namespace Alcatraz
         {
             
         }
-        public Client(ClientClass clientClass,Alcatraz alcatraz, int playerID)
+        public Client(Alcatraz alcatraz, int playerID)
         {
-            this.clientClass = clientClass;
+            //this.clientClass = clientClass;
             this.alcatraz = alcatraz;
             this.playerID = playerID;
          //   this.port = port;
@@ -47,10 +46,6 @@ namespace Alcatraz
         //    return this.port;
         //}
 
-        public ClientClass getClientClass()
-        {
-            return clientClass;
-        }
         public Alcatraz getAlcatraz()
         {
             return alcatraz;

@@ -1,10 +1,8 @@
 ﻿using System;
 using Akka.Actor;
 using Akka.Event;
-using Alcatraz;
-using Interface;
 
-namespace GameInterface
+namespace Alcatraz
 {
     /// <summary>
     /// Actor that just replies the message that it received earlier
@@ -12,39 +10,30 @@ namespace GameInterface
     public class GameActor : ReceiveActor
     {
         private readonly ILoggingAdapter log = Context.GetLogger();
-
-        private ClientClass cClass = new ClientClass(2);
+        private Client[] clientArr = new Client[2];
+        private int iterator = 0;
 
         public GameActor()
         {
-
-            Receive<Hello>(hello =>
-            {
-                Console.WriteLine("[{0}]: {1}", Sender, hello.Message);
-                Sender.Tell(hello);
-            });
-
-            Receive<Msg1>(msg => {
-                // echo message back to sender
-                Sender.Tell(msg);
-            });
-
-            Receive<Players>(player => {
-                // echo message back to sender
-                Sender.Tell(player.printPlayerCounter());
-            });
-
             Receive<Move>(player => {
                 // echo message back to sender
                 Sender.Tell("ss");
             });
             Receive<Client>(client => {
-                // echo message back to sender
-                ClientClass ss = cClass.getClientClass();
-                ss.setOther(0, client.getAlcatraz());
-                
-               // client.getClientClass();
+                Console.WriteLine("received message from" + client.getPlayerID());
+
+                clientArr[iterator] = client;
+                iterator++;
                 Sender.Tell("ss");
+
+                if (iterator == clientArr.Length-1)
+                {
+                    Test.receiveClients(clientArr);                  
+                }
+                else
+                    Console.WriteLine("Waiting for others");
+
+               
             });
 
         }

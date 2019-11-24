@@ -65,6 +65,7 @@
     <Compile Include="AlcatrazGame.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="ClientClass.cs" />
+    <Compile Include="ClientData.cs" />
     <Compile Include="GameActor.cs" />
     <Compile Include="Move.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
