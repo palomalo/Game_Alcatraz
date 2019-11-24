@@ -53,13 +53,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client_old.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="EchoActor.cs" />
-    <Compile Include="Hello.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="MessagingActor.cs" />
-    <Compile Include="Players.cs" />
+    <None Include="Messageingcs" />
+    <Compile Include="Hello.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

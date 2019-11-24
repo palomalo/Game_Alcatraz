@@ -10,10 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E4246E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "RemoteClient\Client.csproj", "{8D5A8566-F787-4100-AB79-83C5D56F104A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "InterfaceShared\Interface.csproj", "{CF7C6CB6-E764-4D7B-B694-754AAD0B3BCE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary3", "..\..\Alcatraz_game_logic\Game_logic\ClassLibrary3\ClassLibrary3.csproj", "{34794E74-069C-4913-9676-D61D7F50466E}"
 EndProject
 Global
@@ -22,14 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D5A8566-F787-4100-AB79-83C5D56F104A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D5A8566-F787-4100-AB79-83C5D56F104A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D5A8566-F787-4100-AB79-83C5D56F104A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D5A8566-F787-4100-AB79-83C5D56F104A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF7C6CB6-E764-4D7B-B694-754AAD0B3BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF7C6CB6-E764-4D7B-B694-754AAD0B3BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF7C6CB6-E764-4D7B-B694-754AAD0B3BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF7C6CB6-E764-4D7B-B694-754AAD0B3BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{34794E74-069C-4913-9676-D61D7F50466E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{34794E74-069C-4913-9676-D61D7F50466E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34794E74-069C-4913-9676-D61D7F50466E}.Release|Any CPU.ActiveCfg = Release|Any CPU
