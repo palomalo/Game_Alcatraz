@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameInterface
+namespace Interface
 {
     public class MessagingActor : TypedActor, IHandle<string>
     {

@@ -1,4 +1,4 @@
-﻿namespace GameInterface
+﻿namespace Interface
 {
     public class Hello
     {

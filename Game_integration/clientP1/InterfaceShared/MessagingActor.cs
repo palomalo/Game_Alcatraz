@@ -17,9 +17,9 @@ namespace GameInterface
         public void Handle(string message)
         {
             Console.WriteLine(message);
-            if (message != "received")
+            if(message != "received")
                 Sender.Tell("received");
-            //Sender.Tell("received", Self);
+            // Sender.Tell("received", Self);
 
         }
     }
